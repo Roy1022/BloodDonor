@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Force the overlay to always be on top with a blue background */
+.update-modal-overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  z-index: 9999 !important;
+}
+
+/* Modal content container */
+.update-modal-content {
+  background-color: #669bbc !important;
+  padding: 20px !important;
+  border-radius: 20px !important;
+  max-width: 600px !important;
+  width: 90% !important;
+  position: relative !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2) !important;
+  z-index: 10000 !important;
+}
+
+/* Close button */
+.update-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Modal title */
+.update-modal-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Label styling */
+.update-modal-label {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 15px 0 5px 0;
+  color: #fff;
+}
+
+/* Input styling */
+.update-modal-input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 2px solid #1e1e1e;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #000;
+  background-color: #fff;
+  margin-bottom: 15px;
+}
+
+/* Error message styling */
+.update-modal-error {
+  color: #ffcccc;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Button styling */
+.update-modal-button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #ffffff;
+  color: #1e1e1e;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: none;
+}
+
+/* Loading spinner container */
+.update-modal-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
